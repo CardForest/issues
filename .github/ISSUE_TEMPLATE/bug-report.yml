@@ -1,0 +1,32 @@
+name: Bug Report
+description: Report a gameplay rule error, visual glitch, or connection problem on CardForest
+title: "[Bug] "
+labels: ["bug", "status:proposed"]
+body:
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game or Area
+      description: Where did you encounter the issue?
+      options:
+        - Hearts
+        - Spades
+        - Contract Bridge
+        - Gin Rummy
+        - Lobby / Multiplayer Tables
+        - Account / Profile / Other
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Describe what went wrong and what you expected to happen instead.
+      placeholder: "e.g., In Hearts, on the second trick..."
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Device / Browser (Optional)
+      description: Auto-filled or enter your browser and screen type (e.g., Chrome desktop, iPhone Safari)
