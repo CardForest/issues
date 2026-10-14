@@ -1,0 +1,26 @@
+name: Game Request
+description: Propose a new card game or regional variant for CardForest
+title: "[Game Request] "
+labels: ["game-request", "status:proposed"]
+body:
+  - type: input
+    id: family
+    attributes:
+      label: Game Family & Player Count
+      description: Short metadata line shown on the voting card
+      placeholder: "e.g., Bower Trick-Taking · 4 Players (2v2)"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short Summary
+      description: 1-2 sentences describing what makes this game fun and its core rules
+      placeholder: "Fast 24-card partnership trick-taking with bowers, trump calling, and Going Alone."
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Rules Reference / Variations (Optional)
+      description: Links to standard rules or specific variations you want supported
