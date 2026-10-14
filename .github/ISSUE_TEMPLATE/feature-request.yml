@@ -1,0 +1,21 @@
+name: Feature Request
+description: Propose a new platform or gameplay feature for CardForest
+title: "[Feature Request] "
+labels: ["feature-request", "status:proposed"]
+body:
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Area of the platform
+      placeholder: "e.g., Multiplayer & Social, Analysis & History, Accessibility"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short Summary
+      description: 1-2 sentences describing the feature and how it helps players
+      placeholder: "Create an unlisted table and share a direct invite link so friends can join a reserved seat."
+    validations:
+      required: true
